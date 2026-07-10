@@ -199,7 +199,7 @@ function Index() {
             </div>
           </div>
           <div className="grid md:grid-cols-4 gap-4">
-            {[wale4, wale2, wale, wale3].map((img, i) => (
+            {[wale4, wale2, wale1, wale3].map((img, i) => (
               <div key={i} className={`overflow-hidden border border-border group ${i % 2 ? 'md:translate-y-8' : ''}`}>
                 <img src={img.url} alt={`Waley T ${i + 1}`} className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-700" />
               </div>
