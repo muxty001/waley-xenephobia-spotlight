@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
-import wale1 from "@/assets/wale.jpg.asset.json";
-import wale2 from "@/assets/wale2.jpg.asset.json";
-import wale3 from "@/assets/wale_3.jpg.asset.json";
-import wale4 from "@/assets/wale_4.jpg.asset.json";
+const wale1 = "/wale.jpg";
+const wale2 = "/wale2.jpg";
+const wale3 = "/wale_3.jpg";
+const wale4 = "/wale_4.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { property: "og:image", content: wale4.url },
-      { name: "twitter:image", content: wale4.url },
+      { property: "og:image", content: wale4 },
+      { name: "twitter:image", content: wale4 },
     ],
   }),
 });
@@ -71,7 +71,7 @@ function Index() {
           </div>
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[3/4] overflow-hidden border border-border">
-              <img src={wale4.url} alt="Waley T portrait" className="w-full h-full object-cover" />
+              <img src={wale4} alt="Waley T portrait" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex justify-between font-mono text-xs uppercase tracking-widest">
                 <span>Track 01</span>
@@ -166,8 +166,8 @@ function Index() {
         <div className="grid lg:grid-cols-12 gap-8">
           <div className="lg:col-span-5 space-y-4">
             <div className="grid grid-cols-2 gap-3">
-              <img src={wale2.url} alt="Waley T" className="aspect-[3/4] object-cover border border-border" />
-              <img src={wale3.url} alt="Waley T" className="aspect-[3/4] object-cover border border-border mt-8" />
+              <img src={wale2} alt="Waley T" className="aspect-[3/4] object-cover border border-border" />
+              <img src={wale3} alt="Waley T" className="aspect-[3/4] object-cover border border-border mt-8" />
             </div>
           </div>
           <div className="lg:col-span-7 space-y-6">
@@ -201,7 +201,7 @@ function Index() {
           <div className="grid md:grid-cols-4 gap-4">
             {[wale4, wale2, wale1, wale3].map((img, i) => (
               <div key={i} className={`overflow-hidden border border-border group ${i % 2 ? 'md:translate-y-8' : ''}`}>
-                <img src={img.url} alt={`Waley T ${i + 1}`} className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-700" />
+                <img src={img} alt={`Waley T ${i + 1}`} className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition duration-700" />
               </div>
             ))}
           </div>
