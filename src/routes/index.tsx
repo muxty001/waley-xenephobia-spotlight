@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-const wale1 = "/wale.jpg";
-const wale2 = "/wale2.jpg";
-const wale3 = "/wale_3.jpg";
-const wale4 = "/wale_4.jpg";
+
+const wale1 = "https://i.postimg.cc/NFnq2z51/wale.jpg";
+const wale2 = "https://i.postimg.cc/wMr8RG7D/wale2.jpg";
+const wale3 = "https://i.postimg.cc/C52TnQzk/wale-3.jpg";
+const wale4 = "https://i.postimg.cc/wv6dCNC9/wale-4-main.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
