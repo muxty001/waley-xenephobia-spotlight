@@ -66,9 +66,6 @@ function Index() {
                 Watch Video
               </a>
             </div>
-            <div className="pt-4 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-              Independent Artist
-            </div>
           </div>
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[3/4] overflow-hidden border border-border">
@@ -94,7 +91,6 @@ function Index() {
               <span>Xenephobia</span><span className="text-primary">✦</span>
               <span>Out Now</span><span className="text-primary">✦</span>
               <span>Waley T</span><span className="text-primary">✦</span>
-              <span>Independent</span><span className="text-primary">✦</span>
               <span>Stream Everywhere</span><span className="text-primary">✦</span>
             </div>
           ))}
@@ -181,9 +177,8 @@ function Index() {
             <p className="text-lg text-muted-foreground max-w-2xl">
               Known to the world as <span className="text-bone font-semibold">Waley T</span> — a Nigerian recording artist crafting sound at the crossroads of afrobeats, alté and the diasporic underground. Every record is a document; every visual, a mood.
             </p>
-            <div className="grid sm:grid-cols-3 gap-4 pt-6 border-t border-border">
-              <Stat k="Latest" v="Xenephobia" />
-              <Stat k="Type" v="Independent" />
+            <div className="grid sm:grid-cols-2 gap-4 pt-6 border-t border-border">
+              <Stat k="Latest Release" v="Xenephobia" />
               <Stat k="Status" v="Out Now" />
             </div>
           </div>
@@ -220,7 +215,6 @@ function Index() {
           </div>
           <div className="lg:col-span-7 space-y-4">
             <ContactRow label="Phone" value="+234 903 355 5809" href="tel:+2349033555809" />
-            <ContactRow label="Artist" value="Independent" />
             <ContactRow label="Stream" value="li.sten.to/xenephobia" href={LISTEN_URL} />
             <ContactRow label="Watch" value="youtu.be/ok5PMTLw7Ic" href={YOUTUBE_URL} />
           </div>
